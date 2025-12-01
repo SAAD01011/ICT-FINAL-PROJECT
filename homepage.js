@@ -83,3 +83,14 @@ fetch("header.html")
 fetch("footer.html")
   .then((response) => response.text())
   .then((data) => (document.getElementById("footer").innerHTML = data));
+
+// hover effect on the images in the next to services
+document.querySelectorAll(".blog-card").forEach((card) => {
+  card.addEventListener("mouseenter", () => {
+    card.querySelector("img").style.filter = "brightness(50%)";
+  });
+
+  card.addEventListener("mouseleave", () => {
+    card.querySelector("img").style.filter = "brightness(60%)";
+  });
+});

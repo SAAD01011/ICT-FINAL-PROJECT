@@ -58,37 +58,100 @@
             <h3>Service Three</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
           </div>
+          <div class="services-container">
+            <div class="service-card">
+              <i data-feather="home"></i>
+              <h3>Service One</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+            </div>
+
+            <div class="service-card">
+              <i data-feather="star"></i>
+              <h3>Service Two</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+            </div>
+
+            <div class="service-card">
+              <i data-feather="coffee"></i>
+              <h3>Service Three</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+            </div>
+          </div>
         </div>
-      </div>
 
-      <div class="testimonial-wrapper">
-        <button class="nav-btn t-left" onclick="prevTestimonial()">←</button>
+        <div class="blog-section">
+          <h4 class="sub-title">HOTEL NEWS</h4>
+          <h1 class="main-title">Our Blog & Event</h1>
 
-        <div class="testimonial-box">
-          <div class="sub-title">TESTIMONIALS</div>
-          <div class="title">What Customers Say?</div>
+          <div class="blog-container">
+            <div class="blog-card">
+              <img src="images/1.png" alt="Beach" />
+              <span class="tag">TRAVEL TRIP</span>
+              <h2>Tremblant In Canada</h2>
+              <p class="date">15th April, 2019</p>
+            </div>
 
-          <p class="testimonial-text" id="testimonialText">
-            After a construction project took longer than expected, my husband,
-            my daughter and I needed a place to stay for a few nights. As a
-            Chicago resident, we know a lot about our city, neighborhood and the
-            types of housing options available and absolutely love our vacation
-            at Sona Hotel.
-          </p>
+            <div class="blog-card">
+              <img src="images/1.png" alt="Camping Hill" />
+              <span class="tag">CAMPING</span>
+              <h2>Choosing A Static Caravan</h2>
+              <p class="date">15th April, 2019</p>
+            </div>
 
-          <div class="stars" id="stars">★★★★★</div>
-          <div class="author" id="author">- Alexander Vasquez</div>
+            <div class="blog-card">
+              <img src="images/1.png" alt="Mountains" />
+              <span class="tag">EVENT</span>
+              <h2>Copper Canyon</h2>
+              <p class="date">21th April, 2019</p>
+            </div>
 
-          <button class="nav-btn t-right" onclick="nextTestimonial()">→</button>
+            <div class="blog-card wide">
+              <img src="images/1.png" alt="Living Room" />
+              <span class="tag">EVENT</span>
+              <h2>Trip To Iqaluit In Nunavut A Canadian Arctic City</h2>
+              <p class="date">08th April, 2019</p>
+            </div>
+
+            <div class="blog-card">
+              <img src="images/1.png" alt="Beach Pineapple" />
+              <span class="tag">TRAVEL</span>
+              <h2>Traveling To Barcelona</h2>
+              <p class="date">12th April, 2019</p>
+            </div>
+          </div>
         </div>
-        <script>
-          feather.replace();
-        </script>
-        <script src="homepage.js"></script>
+        <div class="testimonial-wrapper">
+          <button class="nav-btn t-left" onclick="prevTestimonial()">←</button>
+
+          <div class="testimonial-box">
+            <div class="sub-title">TESTIMONIALS</div>
+            <div class="title">What Customers Say?</div>
+
+            <p class="testimonial-text" id="testimonialText">
+              After a construction project took longer than expected, my
+              husband, my daughter and I needed a place to stay for a few
+              nights. As a Chicago resident, we know a lot about our city,
+              neighborhood and the types of housing options available and
+              absolutely love our vacation at Sona Hotel.
+            </p>
+
+            <div class="stars" id="stars">★★★★★</div>
+            <div class="author" id="author">- Alexander Vasquez</div>
+
+            <button class="nav-btn t-right" onclick="nextTestimonial()">
+              →
+            </button>
+          </div>
+          <script>
+            feather.replace();
+          </script>
+          <script src="homepage.js"></script>
+        </div>
+
+        <footer>
+          <div id="footer"></div>
+        </footer>
       </div>
     </section>
   </body>
-  <footer>
-    <div id="footer"></div>
-  </footer>
 </html>
