@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0px 175px 0px 175px;
+  color: #6c757d;
+}
+.contact-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #1f2430;
+}
+.left-box {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+.addflex {
+  display: flex;
+}
+.flex-horizontal {
+  display: flex;
+  flex-direction: column;
+}
+.input-data {
+  display: flex;
+}
+.label {
+  font-size: 16px;
+  color: #6c757d;
+  line-height: 36px;
+  font-weight: 500;
+}
+.value {
+  align-self: center;
+  font-weight: 500px;
+  margin-left: 25px;
+}
+/* RIGHT SIDE */
+.right-box {
+  width: 60%;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.form-row input {
+  width: 50%;
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+textarea {
+  width: 95%;
+  height: 150px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  margin-bottom: 30px;
+}
+
+.submit-btn {
+  background-color: #d9a36d;
+  padding: 14px 40px;
+  color: #6c757d;
+  font-weight: bold;
+}
+.maps {
+  width: 100%;
+  height: 450px;
+}
+.map-container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 60px 175px 0px 175px;
+}
+.paragraph {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Casalusso</title>
+    <link href="page.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="homepage.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <header>
+    <div id="header"></div>
+  </header>
+  <body>
+    <section>
+      <div class="hero-slider" style="background-image: url('images/1.png')">
+        <!-- Left Arrow -->
+        <div class="arrow-container">
+          <div class="arrow-icon" onclick="arrowClick('left')">
+            <i data-feather="chevron-left" class="text-white"></i>
+          </div>
+        </div>
+
+        <!-- Right Arrow -->
+        <div class="arrow-container">
+          <div class="arrow-icon" onclick="arrowClick('right')">
+            <i data-feather="chevron-right" class="text-white"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Our Services -->
+      <div class="container" style="padding: 50px 0">
+        <h3 class="subtitle">Our Services</h3>
+        <h2 class="title">What We Offer</h2>
+
+        <div class="services-container">
+          <div class="service-card">
+            <i data-feather="home"></i>
+            <h3>Service One</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+          </div>
+
+          <div class="service-card">
+            <i data-feather="star"></i>
+            <h3>Service Two</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+          </div>
+
+          <div class="service-card">
+            <i data-feather="coffee"></i>
+            <h3>Service Three</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-wrapper">
+        <button class="nav-btn t-left" onclick="prevTestimonial()">←</button>
+
+        <div class="testimonial-box">
+          <div class="sub-title">TESTIMONIALS</div>
+          <div class="title">What Customers Say?</div>
+
+          <p class="testimonial-text" id="testimonialText">
+            After a construction project took longer than expected, my husband,
+            my daughter and I needed a place to stay for a few nights. As a
+            Chicago resident, we know a lot about our city, neighborhood and the
+            types of housing options available and absolutely love our vacation
+            at Sona Hotel.
+          </p>
+
+          <div class="stars" id="stars">★★★★★</div>
+          <div class="author" id="author">- Alexander Vasquez</div>
+
+          <button class="nav-btn t-right" onclick="nextTestimonial()">→</button>
+        </div>
+        <script>
+          feather.replace();
+        </script>
+        <script src="homepage.js"></script>
+      </div>
+    </section>
+  </body>
+  <footer>
+    <div id="footer"></div>
+  </footer>
+</html>
