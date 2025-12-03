@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- ================= MODAL TRIGGER BUTTON ================ -->
+    <button class="open-modal-btn" onclick="openModal()">Learn More</button>
+
+    <!-- ================= MODAL STRUCTURE ================ -->
+    <div id="mainModal" class="modal-overlay">
+      <div class="modal-box">
+        <span class="modal-close" onclick="closeModal()">&times;</span>
+
+        <h2 class="modal-title">Welcome to Country Club</h2>
+
+        <p class="modal-text">
+          Discover a world where luxury meets comfort. Enjoy premium dining,
+          relaxing lounges, and an unmatched experience crafted just for you.
+        </p>
+
+        <ul class="modal-features">
+          <li>✔ Premium Lounge Access</li>
+          <li>✔ Exclusive Member Benefits</li>
+          <li>✔ Fine Dining & Recreational Activities</li>
+          <li>✔ 24/7 Guest Support</li>
+        </ul>
+
+        <button class="modal-btn">Explore More</button>
+      </div>
+    </div>
+    <style>
+      /* ========= BUTTON ========= */
+      .open-modal-btn {
+        padding: 12px 25px;
+        background: #ffffff10;
+        border: 2px solid white;
+        border-radius: 8px;
+        color: white;
+        cursor: pointer;
+        backdrop-filter: blur(5px);
+        transition: 0.3s;
+      }
+
+      .open-modal-btn:hover {
+        background: #ffffff30;
+      }
+
+      /* ========= MODAL BACKDROP ========= */
+      .modal-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        z-index: 2000;
+      }
+
+      /* ========= MODAL BOX ========= */
+      .modal-box {
+        background: rgba(255, 255, 255, 0.12);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 16px;
+        padding: 30px;
+        max-width: 550px;
+        width: 100%;
+        animation: fadeIn 0.3s ease;
+        color: white;
+        position: relative;
+        text-align: center;
+      }
+
+      /* ========= CLOSE BUTTON ========= */
+      .modal-close {
+        position: absolute;
+        right: 15px;
+        top: 10px;
+        font-size: 30px;
+        cursor: pointer;
+      }
+
+      /* ========= CONTENT STYLING ========= */
+      .modal-title {
+        font-size: 28px;
+        margin-bottom: 10px;
+      }
+
+      .modal-text {
+        font-size: 18px;
+        margin-bottom: 15px;
+      }
+
+      .modal-features {
+        list-style: none;
+        padding: 0;
+        margin-bottom: 20px;
+        text-align: left;
+      }
+
+      .modal-features li {
+        margin-bottom: 8px;
+        font-size: 16px;
+      }
+
+      .modal-btn {
+        padding: 12px 20px;
+        background: white;
+        border: none;
+        color: black;
+        border-radius: 8px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      .modal-btn:hover {
+        background: #f0f0f0;
+      }
+
+      /* ========= ANIMATION ========= */
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(-20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* ========= RESPONSIVE ========= */
+      @media (max-width: 450px) {
+        .modal-box {
+          padding: 20px;
+        }
+        .modal-title {
+          font-size: 22px;
+        }
+        .modal-text {
+          font-size: 16px;
+        }
+      }
+    </style>
+    <script>
+      function openModal() {
+        document.getElementById("mainModal").style.display = "flex";
+      }
+
+      function closeModal() {
+        document.getElementById("mainModal").style.display = "none";
+      }
+
+      // Auto-open modal when page loads
+      window.onload = function () {
+        openModal();
+      };
+
+      // Close modal if clicking outside box
+      window.onclick = function (e) {
+        if (e.target.id === "mainModal") {
+          closeModal();
+        }
+      };
+    </script>
+  </body>
+</html>

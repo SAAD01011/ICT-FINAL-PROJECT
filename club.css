@@ -1,0 +1,520 @@
+body {
+  margin: 0;
+  background: #f7eed3; /* light cream */
+  font-family: "Times New Roman", serif;
+}
+
+.facilities-section {
+  text-align: center;
+  padding: 80px 20px 120px;
+}
+
+/* Small top title */
+.small-title {
+  font-size: 14px;
+  letter-spacing: 3px;
+  color: #1a2b33;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+/* Main large heading */
+.main-heading {
+  font-size: 55px;
+  color: #0b1d28;
+  line-height: 1.25;
+  font-weight: 500;
+  margin-bottom: 80px;
+}
+
+/* icon cards container */
+.facility-cards {
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+  flex-wrap: wrap;
+}
+
+/* individual card */
+.card {
+  text-align: center;
+}
+
+/* icon bubble */
+.icon {
+  width: 140px;
+  height: 120px;
+  background: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 45px;
+  margin: 0 auto 25px;
+}
+
+/* label */
+.label {
+  font-size: 22px;
+  color: #0b1d28;
+  font-weight: 500;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .main-heading {
+    font-size: 40px;
+  }
+  .facility-cards {
+    gap: 70px;
+  }
+}
+/* Basic Reset and Variables */
+:root {
+  --text-color: #333333;
+  --background-color-1: #f7f3ed; /* Light background for welcome section */
+  --accent-color: #7d7d7d; /* For the pre-headings and checkmarks */
+  --font-heading: "Georgia", serif; /* Placeholder for elegant serif font */
+  --font-body: "Helvetica Neue", sans-serif; /* Placeholder for body font */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--text-color);
+}
+
+/* --- Section 1: Welcome --- */
+.welcome-section {
+  display: flex;
+  max-width: 1400px;
+  margin: 0 auto;
+  background-color: var(--background-color-1);
+  padding: 50px 0; /* Adjust as needed */
+}
+
+.welcome-text {
+  flex: 1; /* Takes up one part of the space */
+  padding: 80px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.welcome-text .pre-heading {
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: var(--accent-color);
+  margin-bottom: 10px;
+}
+
+.welcome-text h1 {
+  font-family: var(--font-heading);
+  font-size: 60px;
+  margin-bottom: 25px;
+  line-height: 1.1;
+}
+
+.welcome-text .description {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.welcome-image {
+  flex: 1.5; /* Takes up a bit more space than the text */
+  min-height: 500px; /* Set a minimum height for the image container */
+  background-image: url("image_2c1b9c.jpg"); /* Replace with actual path or URL */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* --- Section 2: Amenities --- */
+.amenities-section {
+  display: flex;
+  max-width: 1400px;
+  margin: 50px auto;
+  padding: 0 40px;
+  gap: 40px; /* Space between the image group and the text content */
+}
+
+.amenities-images {
+  flex: 1.2; /* Image container takes more space */
+  display: flex;
+  gap: 20px;
+  position: relative;
+  padding-top: 50px; /* For alignment/spacing */
+}
+
+.image-left,
+.image-right {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 400px;
+}
+
+.image-left {
+  flex: 1;
+  background-image: url("image_2c1b58_swim.jpg"); /* You would need to crop the original image */
+  /* If you can't crop, you can use the original and adjust background-position */
+}
+
+.image-right {
+  flex: 1;
+  background-image: url("image_2c1b58_gym.jpg"); /* You would need to crop the original image */
+}
+
+.amenities-content {
+  flex: 1;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.amenities-content .pre-heading {
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: var(--accent-color);
+  margin-bottom: 10px;
+  text-align: right; /* Aligned right in the original image */
+}
+
+.amenities-content h2 {
+  font-family: var(--font-heading);
+  font-size: 45px;
+  margin-bottom: 30px;
+  line-height: 1.1;
+  text-align: right; /* Aligned right in the original image */
+}
+
+.amenity-list {
+  list-style: none; /* Remove default bullet points */
+  padding-left: 0;
+  text-align: right; /* Align list items to the right */
+}
+
+.amenity-list li {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 10px;
+  padding-left: 25px; /* Space for the custom checkmark */
+  position: relative;
+}
+
+/* Custom Checkmark Styling (using a pseudo-element) */
+.amenity-list li::before {
+  content: "\2713"; /* Checkmark Unicode symbol */
+  color: var(--accent-color);
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Basic Responsiveness (for smaller screens) */
+@media (max-width: 900px) {
+  .welcome-section,
+  .amenities-section {
+    flex-direction: column;
+  }
+
+  .welcome-text,
+  .amenities-content {
+    padding: 40px 20px;
+  }
+
+  .welcome-text h1 {
+    font-size: 48px;
+  }
+
+  .amenities-images {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .amenities-content .pre-heading,
+  .amenities-content h2,
+  .amenity-list {
+    text-align: left;
+  }
+
+  /* Adjust checkmark for left alignment on small screens */
+  .amenity-list li {
+    text-align: left;
+  }
+
+  .amenity-list li::before {
+    left: unset;
+    right: calc(100% - 15px); /* Simple adjustment for left alignment */
+  }
+}
+
+/* Basic Setup */
+:root {
+  --text-color: #38312e; /* Dark text color */
+  --background-color: #f7f3ed; /* Light beige background */
+  --font-heading: "Georgia", serif; /* Placeholder for elegant serif font */
+  --font-body: "Helvetica Neue", sans-serif; /* Placeholder for body font */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--text-color);
+  background-color: var(--background-color);
+  line-height: 1.6;
+}
+
+/* --- Dining Section Layout (CSS Grid) --- */
+.dining-section {
+  padding: 80px 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  display: grid;
+  /* Create 3 equal columns */
+  grid-template-columns: repeat(3, 1fr);
+  /* Set a small gap between the cards */
+  gap: 30px;
+}
+
+.card {
+  /* Styles to replicate the look of a distinct section */
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Subtle separator line */
+}
+
+.card h2 {
+  font-family: var(--font-heading);
+  font-size: 40px;
+  font-weight: normal;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.card p {
+  font-size: 16px;
+  margin-top: 5px;
+  color: #5d5d5d; /* Slightly lighter description text */
+}
+
+/* Specific adjustment for the last row to remove the bottom border, if desired */
+.container .card:nth-child(4),
+.container .card:nth-child(5),
+.container .card:nth-child(6) {
+  border-bottom: none;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 900px) {
+  .container {
+    /* On medium screens, switch to 2 columns */
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Ensure the bottom border is visible for all but the last two items */
+  .card {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .container .card:nth-child(5),
+  .container .card:nth-child(6) {
+    border-bottom: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    /* On small screens, switch to 1 column */
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 20px 0;
+  }
+
+  /* Restore bottom border for all but the last card */
+  .card {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .container .card:last-child {
+    border-bottom: none;
+  }
+}
+
+/* --- Basic Setup --- */
+:root {
+  --text-color: #38312e; /* Dark text color */
+  --background-color: #f7f3ed; /* Light beige background */
+  --font-heading: "Georgia", serif; /* Placeholder for elegant serif font */
+  --font-body: "Helvetica Neue", sans-serif; /* Placeholder for body font */
+  --red-accent: #e54d4d; /* For the decorative line */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--text-color);
+  background-color: var(--background-color);
+  line-height: 1.6;
+}
+
+/* --- Relaxation Section Layout --- */
+.relaxation-section {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 50px 40px;
+  position: relative;
+  overflow: hidden; /* To contain the absolute red line */
+}
+
+/* --- Image Gallery --- */
+.image-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.gallery-item {
+  width: 25%; /* Four items, equal width */
+  height: 250px;
+  background-color: #d1d1d1; /* Placeholder color */
+  background-size: cover;
+  background-position: center;
+}
+
+/* Placeholder background images (replace with actual image URLs/paths) */
+.item-1 {
+  background-image: url("image-placeholder-1.jpg");
+}
+.item-2 {
+  background-image: url("image-placeholder-2.jpg");
+}
+.item-3 {
+  background-image: url("image-placeholder-3.jpg");
+}
+.item-4 {
+  background-image: url("image-placeholder-4.jpg");
+}
+
+/* --- Content Grid (Two Columns) --- */
+.content-grid {
+  display: flex;
+
+  gap: 40px;
+  position: relative;
+}
+
+.content-left h1 {
+  font-family: var(--font-heading);
+  font-size: 60px;
+  line-height: 1.1;
+  margin-bottom: 50px;
+  /* Styles for the large, prominent heading */
+}
+
+.content-left h2,
+.content-right h2 {
+  font-family: var(--font-heading);
+  font-size: 28px;
+  font-weight: normal;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.content-right {
+  padding-top: 20px; /* Aligns description text with the H1 */
+}
+
+.content-right .description-text {
+  font-size: 17px;
+  margin-bottom: 40px;
+  /* Styles for the main paragraph */
+}
+
+.text-block {
+  margin-bottom: 30px;
+}
+
+/* --- Decorative Element (Red Line) --- */
+.red-line-element {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2px;
+  height: 300px; /* Vertical line */
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    var(--red-accent) 50%,
+    transparent 100%
+  );
+  opacity: 0.5;
+  /* Adjust for the curved element visible in the image */
+  /* This requires a more complex CSS shape or background image to be pixel-perfect, 
+       but this provides the basic vertical line aesthetic. */
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 1000px) {
+  .content-grid {
+    /* Stack columns vertically on smaller screens */
+    grid-template-columns: 1fr;
+  }
+
+  .image-gallery {
+    flex-wrap: wrap;
+  }
+
+  .gallery-item {
+    width: 48%; /* Two items per row */
+    height: 180px;
+  }
+
+  .red-line-element {
+    display: none; /* Hide the decorative element when stacked */
+  }
+
+  .content-left h1 {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 600px) {
+  .image-gallery {
+    gap: 10px;
+  }
+
+  .gallery-item {
+    width: 100%; /* Single column of images on very small screens */
+    height: 150px;
+  }
+
+  .relaxation-section {
+    padding: 30px 20px;
+  }
+}

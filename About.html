@@ -3,7 +3,208 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>About Us – Sona</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        background: #fff;
+        color: #333;
+      }
+
+      /* ---------------- HEADER TITLE ---------------- */
+      .page-title {
+        text-align: center;
+        padding: 40px 0 10px;
+        font-size: 26px;
+        font-weight: 600;
+      }
+      .breadcrumb {
+        text-align: center;
+        font-size: 13px;
+        margin-bottom: 40px;
+        color: #555;
+      }
+
+      /* ---------------- ABOUT SECTION ---------------- */
+      .about-container {
+        max-width: 1080px;
+        margin: auto;
+        display: flex;
+        gap: 40px;
+        padding: 20px;
+      }
+      .about-text {
+        width: 60%;
+      }
+      .about-text h2 {
+        margin-bottom: 15px;
+        font-size: 22px;
+      }
+      .about-list {
+        margin-top: 20px;
+        list-style: none;
+      }
+      .about-list li {
+        margin-bottom: 8px;
+        font-size: 14px;
+      }
+
+      /* ---------------- SERVICES IMAGES ---------------- */
+      .services-container {
+        display: flex;
+        gap: 15px;
+        max-width: 1080px;
+        margin: 30px auto;
+        padding: 0 20px;
+      }
+      .service-box {
+        width: 33.3%;
+        position: relative;
+        overflow: hidden;
+      }
+      .service-box img {
+        width: 100%;
+        border-radius: 6px;
+      }
+      .service-box p {
+        position: absolute;
+        bottom: 15px;
+        left: 15px;
+        color: white;
+        font-weight: 600;
+      }
+
+      /* ---------------- VIDEO BANNER ---------------- */
+      .video-banner {
+        background: url("img/banner.jpg") center/cover no-repeat;
+        padding: 120px 0;
+        text-align: center;
+        color: white;
+        position: relative;
+        margin: 40px 0;
+      }
+      .video-banner h2 {
+        font-size: 28px;
+        margin-bottom: 10px;
+      }
+      .video-banner p {
+        font-size: 14px;
+        margin-bottom: 20px;
+      }
+
+      .play-btn {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 2px solid white;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+      }
+
+      /* ---------------- GALLERY SECTION ---------------- */
+      .gallery-title {
+        text-align: center;
+        margin-top: 40px;
+        color: #d4a05a;
+        text-transform: uppercase;
+        font-size: 12px;
+        letter-spacing: 2px;
+      }
+      .gallery-heading {
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 30px;
+      }
+
+      .gallery-container {
+        max-width: 1080px;
+        margin: auto;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+      }
+
+      .gallery-container img {
+        width: 100%;
+        border-radius: 6px;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <!-- PAGE TITLE -->
+    <h2 class="page-title">About Us</h2>
+    <p class="breadcrumb">Home > About Us</p>
+
+    <!-- ABOUT SECTION -->
+    <div class="about-container">
+      <div class="about-text">
+        <h2>Welcome To Sona.</h2>
+        <p>
+          Built in 1910 during the Belle Époque period, this hotel is located in
+          the center of Paris. With easy access to the city’s tourist
+          attractions, it offers tastefully decorated rooms.
+        </p>
+
+        <ul class="about-list">
+          <li>✔ 20% Off On Accommodation</li>
+          <li>✔ Complimentary Daily Breakfast</li>
+          <li>✔ 3 Pieces Laundry Per Day</li>
+          <li>✔ Free Wifi</li>
+          <li>✔ Discount 20% On F&B</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- SERVICE IMAGES SECTION -->
+    <div class="services-container">
+      <div class="service-box">
+        <img src="img/service1.jpg" alt="" />
+        <p>Restaurants Services</p>
+      </div>
+
+      <div class="service-box">
+        <img src="img/service2.jpg" alt="" />
+        <p>Travel & Camping</p>
+      </div>
+
+      <div class="service-box">
+        <img src="img/service3.jpg" alt="" />
+        <p>Event & Party</p>
+      </div>
+    </div>
+
+    <!-- VIDEO BANNER SECTION -->
+    <div class="video-banner">
+      <h2>Discover Our Hotel & Services.</h2>
+      <p>It is Hurricane Season But We Are Visiting Hilton Head Island</p>
+
+      <div class="play-btn">▶</div>
+    </div>
+
+    <!-- GALLERY SECTION -->
+    <p class="gallery-title">Our Gallery</p>
+    <h2 class="gallery-heading">Discover Our Work</h2>
+
+    <div class="gallery-container">
+      <img src="images/1.png" />
+      <img src="mages/1.png" />
+      <img src="mages/1.png" />
+      <img src="mages/1.png" />
+
+      <img src="mages/1.png" />
+      <img src="mages/1.png" />
+      <img src="img/g7.jpg" />
+      <img src="img/g8.jpg" />
+    </div>
+  </body>
 </html>
