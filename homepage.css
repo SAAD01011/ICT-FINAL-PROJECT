@@ -4,7 +4,6 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family: Arial, sans-serif; */
 }
 .open-modal-btn {
   padding: 12px 25px;
@@ -21,9 +20,9 @@ body {
   background: #ffffff30;
 }
 
-/* ========= MODAL BACKDROP ========= */
 .modal-overlay {
   position: fixed;
+  color: black;
   top: 0;
   left: 0;
   width: 100%;
