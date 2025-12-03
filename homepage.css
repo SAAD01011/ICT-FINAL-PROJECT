@@ -244,9 +244,11 @@ body {
 .title {
   text-align: center;
 }
-
+.title {
+  color: #ff6f61;
+}
 .subtitle {
-  color: #dfa974;
+  color: black;
 }
 body {
   margin: 0;
@@ -368,8 +370,8 @@ body {
 .sub-title {
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-size: 13px;
-  color: #c58b5f;
+  font-size: 40px;
+  color: #ff6f61;
   margin-bottom: 10px;
 }
 
@@ -403,7 +405,8 @@ body {
 }
 
 .sub-title {
-  color: #c79e70;
+  color: #ff6f61;
+  font-weight: 400;
   letter-spacing: 2px;
   margin-bottom: 5px;
 }

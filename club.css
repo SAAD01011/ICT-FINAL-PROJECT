@@ -96,6 +96,7 @@ body {
   margin: 0 auto;
   background-color: var(--background-color-1);
   padding: 50px 0; /* Adjust as needed */
+  align-items: end;
 }
 
 .welcome-text {
